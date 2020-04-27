@@ -1,0 +1,48 @@
+{
+    "name": "@busyhe/ynn-plugin-exception",
+    "version": "0.0.1",
+    "description": "ynn异常处理通用插件",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "jest --forceExit",
+        "tw": "npm run test-watch",
+        "test-watch": "jest --watch",
+        "test-cov": "jest --coverage --runInBand --forceExit --detectOpenHandles",
+        "lint": "eslint lib --cache --ignore-path .eslintignore",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "exception",
+        "ynn",
+        "plugin",
+        "common"
+    ],
+    "author": "LvChengbin <lvchengbin59@gmail.com>",
+    "jest": {
+        "testMatch": [
+            "**/test/**/*.spec.js"
+        ],
+        "coverageReporters": [
+            "text-summary",
+            "text",
+            "lcov"
+        ],
+        "collectCoverageFrom": [
+            "lib/**/*.js"
+        ],
+        "testEnvironment": "node"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "jest": "^25.4.0",
+        "pre-commit": "^1.2.2",
+        "ynn": "0.1.1"
+    },
+    "dependencies": {
+        "@lvchengbin/is": "0.0.27"
+    }
+}
