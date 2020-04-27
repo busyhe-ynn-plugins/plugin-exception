@@ -1,4 +1,4 @@
-# @z-node-common/plugin-exception
+# @busyhe/ynn-plugin-exception
 
 前端服务异常处理通用模块
 
@@ -18,7 +18,7 @@
 ## Installation
 
 ```sh
-$ npm install --save git+ssh://git@git.zuoshouyisheng.com:frontend/node-common/plugin-exception.git
+$ npm install --save @busyhe/ynn-plugin-exception
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ const app = new Ynn( {
     logging : false,
     plugins : {
         Exception : {
-            path : '@z-node-common/plugin-exception',
+            path : '@busyhe/ynn-plugin-exception',
             options : {
                 // 也可以通过 config/errors.js 进行配置
                 errors : {
